@@ -1,0 +1,1 @@
+fidelity --gpu 4 --fid --input1 /data/jingshirou/diffusers/examples/controlnet/gen_test_img/BASE-02-Pexel-final/SDXL-Ctrlora/openpose-28514-result/sample --input2 /data/jingshirou/diffusers/examples/controlnet/gen_test_img/BASE-02-Pexel-final/SDXL-Ctrlora/openpose-28514-result/img

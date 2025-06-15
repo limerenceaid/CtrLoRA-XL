@@ -1,0 +1,1 @@
+python scripts/evaluate_restore.py --sample_dir=/data/jingshirou/diffusers/examples/controlnet/gen_test_img/LORA-01/SDXL-Ctrlora/Snow100K_train-100000-result-100k
