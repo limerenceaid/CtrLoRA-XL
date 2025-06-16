@@ -59,5 +59,5 @@ python scripts/inference.py   --sd_path=SDXL_PATH \
 ## Train your own lora
 
 ```bash
-bash train_lora_script.sh
+bash script/train_lora_script.sh
 ```
