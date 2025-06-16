@@ -1,5 +1,5 @@
 # CtrLoRA-XL
-official repository for CtrLoRA-XL
+official implementation for CtrLoRA-XL
 
 ### Installation
 
@@ -23,8 +23,8 @@ pip install -r requirements_sdxl.txt
 
 ## 🤖️ Download Pretrained Models
 
-We provide our pretrained models [here](https://huggingface.co/xyfJASON/ctrlora/tree/main). Please put the **Base ControlNet** (`ctrlora_sd15_basecn700k.ckpt`) into `./ckpts/ctrlora-basecn` and the **LoRAs** into `./ckpts/ctrlora-loras`.
-The naming convention of the LoRAs is `ctrlora_sd15_<basecn>_<condition>.ckpt` for base conditions and `ctrlora_sd15_<basecn>_<condition>_<images>_<steps>.ckpt` for novel conditions.
+We provide our pretrained models [here](https://huggingface.co/Savlim/CtrLoRA-XL/tree/main). Please put the **Base ControlNet** (`ctrlora-xl-base.safetensors`) into `./ckpts/ctrlora-xl-base` and the **LoRAs** into `./ckpts/ctrlora-xl-loras`.
+
 
 You also need to download the **SDXL-based Models** and put them into `./ckpts/sdxl`. Models used in our work:
 
@@ -37,3 +37,27 @@ You also need to download the **SDXL-based Models** and put them into `./ckpts/s
 - [PVC Style Model](https://civitai.com/models/338712/pvc-style-modelmovable-figure-model-xl)
 - [RealVisXL V5.0](https://civitai.com/models/139562/realvisxl-v50)
 
+## 
+
+
+## Inference
+
+
+```bash
+python scripts/inference.py   --sd_path=SDXL_PATH \
+ --cn_path=CONTROLNET_PATH \
+ --lora_path=LORA_PATH \
+ --task=[single, multi] \
+ --data_root=DATAROOT \
+ --test_num=TEST_NUM \
+ --condition=CONDITION \
+ --condition2=CONDITION2 \
+ --seed=SEED \
+ --guidance_scale=GUIDANCE_SCALE
+```
+
+## Train your own lora
+
+```bash
+bash train_lora_script.sh
+```
