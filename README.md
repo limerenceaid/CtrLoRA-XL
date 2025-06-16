@@ -29,7 +29,7 @@ We provide our pretrained models [here](https://huggingface.co/Savlim/CtrLoRA-XL
 You also need to download the **SDXL-based Models** and put them into `./ckpts/sdxl`. Models used in our work:
 
 
-- Stable Diffusion XL (`v1-5-pruned.ckpt`): [official](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main)
+- Stable Diffusion XL: [official](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main)
 - [DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl)
 - [Anything XL](https://civitai.com/models/9409/or-anything-xl)
 - [Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl)
